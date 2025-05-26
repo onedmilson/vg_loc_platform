@@ -1,0 +1,62 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 15px;
+    z-index: 999;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .header--scrolled {
+    background-color: rgba(17, 17, 17, 0.9); /* cor de fundo ao rolar */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* efeito de sombra */
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+  }
+  
+  .nav__logo img {
+    width: 40px;
+    height: auto;
+  }
+  
+  .nav__list {
+    display: flex;
+    column-gap: 2rem;
+  }
+  
+  .nav__item a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  
+  .nav__item a:hover {
+    color: #0af;
+  }
+  
+  .nav__actions {
+    margin-left: auto;
+  }
+  
+  .nav__login-btn {
+    padding: 8px 16px;
+    background-color: #0af;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav__login-btn:hover {
+    background-color: #007acc;
+  }
+  

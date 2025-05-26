@@ -1,0 +1,187 @@
+.dashboard-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f7fc;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-header h2 {
+  color: #34495e;
+  font-weight: 700;
+}
+
+.logout-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #c0392b;
+}
+
+.error-msg {
+  color: #e74c3c;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.equipamentos-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Aqui começa a alteração importante */
+.equipamento-item {
+  background: white;
+  padding: 15px 20px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(52, 73, 94, 0.1);
+  color: #2c3e50;
+  font-weight: 600;
+
+  display: flex;          /* deixa o conteúdo em linha */
+  align-items: center;    /* centraliza verticalmente */
+  gap: 15px;              /* espaçamento entre botões e texto */
+}
+
+.actions {
+  display: flex;          /* botões lado a lado */
+  gap: 10px;
+  flex-shrink: 0;         /* evita que os botões encolham */
+}
+
+.equipamento-nome {
+  color: #2980b9;
+  font-weight: 700;
+  flex-grow: 1;           /* ocupa o espaço restante à direita */
+}
+
+.create-button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  margin-left: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.create-button:hover {
+  background-color: #219150;
+}
+
+.edit-button,
+.delete-button {
+  background-color: #2980b9;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: #1f6391;
+}
+
+.delete-button {
+  background-color: #e74c3c;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+
+/* Modal simples */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #34495e;
+}
+
+.form input {
+  width: 100%;
+  padding: 8px 12px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.form-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.form-buttons button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form-buttons button[type='submit'] {
+  background-color: #27ae60;
+  color: white;
+}
+
+.form-buttons button[type='submit']:hover {
+  background-color: #219150;
+}
+
+.form-buttons button[type='button'] {
+  background-color: #bdc3c7;
+}
+
+.form-buttons button[type='button']:hover {
+  background-color: #95a5a6;
+}
